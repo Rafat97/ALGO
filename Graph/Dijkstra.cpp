@@ -51,17 +51,17 @@ void Dijkstr(int startNode){
     }
 
     cout<<"\n\n";
-    /*
+    
     vector<int>:: iterator it ;
     int index = 0;
     //int mst = 0;
-    for(it = parent.begin() ;it != parent.end() ;++it){
-        cout<<index<<"->"<<*it<<" "<<key[index]<<endl;
+    for(int i = 0; i < parent.size() ;i++){
+        cout<<index<<"->"<<i<<" "<<key[index]<<endl;
         //mst += key[index];
         index++;
 
     }
-*/
+
     cout<<"\n\nMST is : "<<mst<<endl;
 
 
