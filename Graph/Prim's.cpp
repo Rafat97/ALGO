@@ -40,7 +40,7 @@ void prims(int startNode){
 
             if(inMST[v] == false && key[v] >= w  ){
                 key[v] = w;
-                mst+=w
+                mst+=w;
                 int val = v * (-1);
                 MinHeap.push(val);
                 parent[v] = u;
