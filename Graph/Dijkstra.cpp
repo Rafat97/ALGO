@@ -7,7 +7,7 @@ vector< pair<int , int> > graph[100];
 int n ;
 int mst = 0;;
 
-void prims(int startNode){
+void Dijkstr(int startNode){
 
     priority_queue <int> MinHeap;
 
@@ -91,7 +91,7 @@ int main()
         graph[v].push_back(make_pair(u,w));
     }
     cin>>startingNode;
-    prims(startingNode);
+    Dijkstr(startingNode);
 
 
 
