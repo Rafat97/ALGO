@@ -51,6 +51,7 @@ void prims(int startNode){
     }
 
     cout<<"\n\n";
+    /*
     vector<int>:: iterator it ;
     int index = 0;
     //int mst = 0;
@@ -60,7 +61,7 @@ void prims(int startNode){
         index++;
 
     }
-
+*/
     cout<<"\n\nMST is : "<<mst<<endl;
 
 
