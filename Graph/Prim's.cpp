@@ -5,6 +5,7 @@ using namespace std;
 
 vector< pair<int , int> > graph[100];
 int n ;
+int mst;
 
 
 void prims(int startNode){
@@ -39,6 +40,7 @@ void prims(int startNode){
 
             if(inMST[v] == false && key[v] >= w  ){
                 key[v] = w;
+                mst+=w
                 int val = v * (-1);
                 MinHeap.push(val);
                 parent[v] = u;
@@ -48,7 +50,7 @@ void prims(int startNode){
 
 
     }
-
+/*
     cout<<"\n\n";
     vector<int>:: iterator it ;
     int index = 0;
@@ -59,7 +61,7 @@ void prims(int startNode){
         index++;
 
     }
-
+*/
     cout<<"\n\nMST is : "<<mst<<endl;
 
 
