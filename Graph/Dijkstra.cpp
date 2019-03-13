@@ -87,8 +87,11 @@ int main()
     n = node;
     for(int i = 0;i<edge;i++){
         cin>>u>>v>>w;
-        graph[u].push_back(make_pair(v,w));
-        graph[v].push_back(make_pair(u,w));
+        pair<int,int> val;
+        val.first = v;val.second=w;
+        graph[u].push_back(val);
+        val.first = u;val.second=w;
+        graph[v].push_back(val);
     }
     cin>>startingNode;
     Dijkstr(startingNode);
